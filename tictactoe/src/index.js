@@ -5,14 +5,16 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 class Square extends React.Component {
-  constructor(props);
-  this.state = {
-    value: null,
-  };
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+
   render() {
     return (
-      <button className="square" onClick={function() {
+      <button className="square" onClick={function () {
         alert('click');
       }}>
         {this.props.value}
